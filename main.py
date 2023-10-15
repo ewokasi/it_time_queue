@@ -4,11 +4,11 @@
 import telebot
 import cfg
 import server_con
-from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMedia
+from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultArticle,InputTextMessageContent
 import board_tree
 import json
 import forwarder
-
+import booker
 bot=telebot.TeleBot(token=cfg.TOKEN)
 
 
@@ -24,6 +24,14 @@ def start_answer(message):
     bot.send_message(chat_id=message.chat.id, text=f"{message.from_user.id} Привет, с моей помощью ты можешь организовать очередь на сдачу преподавателю\n\nВот ссылки на наши другие боты: //", reply_markup=keyboard)
 
 
+@bot.inline_handler(lambda query: query.query == '#')
+def query_text(inline_query):
+    try:
+        r = InlineQueryResultArticle('1', 'Костяков', InputTextMessageContent('hi'))
+        r2 = InlineQueryResultArticle('2', 'DevSpot', InputTextMessageContent('hi'))
+        bot.answer_inline_query(inline_query.id, [r, r2])
+    except Exception as e:
+        print(e)
 
 
 @bot.message_handler(commands=['fw_settings'])
@@ -53,7 +61,7 @@ def add_firewall(message):
 def start_answer(call):
     
     msg = bot.send_message(call.message.chat.id, "Введите номер вашей группы:")
-    bot.register_next_step_handler(msg, server_con.create_group, call.message.from_user.id, call.from_user.username )
+    bot.register_next_step_handler(msg, server_con.create_group, call.from_user.id, call.from_user.username )
 
 
 

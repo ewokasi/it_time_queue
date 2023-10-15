@@ -32,7 +32,7 @@ def branch(call, bot):
     -Просмотр всех чатов, которым вы можете отправить сообщение
     -Как указать чат по умолчанию для входящих
     -Гайд по использованию файрволла для связи""", reply_markup=fw_kb)
-        
+        return
 
     if "red_name" in call.data:
         name_info=f"""Сейчас все, кому вы отправляете сообщение из этого чата видят вас как {forwarder.get_chat_name(call.message.chat.id)}
