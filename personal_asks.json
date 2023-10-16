@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "date": "21/09/2023 23:29:20",
+      "text": "Р",
+      "user": "Ewokasi",
+      "chat_id": 637382945,
+      "id": 0,
+      "status": "answered"
+    },
+    {
+      "date": "21/09/2023 23:32:38",
+      "text": "Р",
+      "user": "Ewokasi",
+      "chat_id": 637382945,
+      "id": 1,
+      "status": "answered"
+    },
+    {
+      "date": "21/09/2023 23:37:39",
+      "text": "сколько дней в году?",
+      "user": "katrinnacatt",
+      "chat_id": 1253032946,
+      "id": 2,
+      "status": "answered"
+    },
+    {
+      "date": "23/09/2023 22:31:00",
+      "text": "Сколько дней в году",
+      "user": "Ewokasi",
+      "chat_id": 637382945,
+      "id": 3,
+      "status": "answered"
+    },
+    {
+      "date": "27/09/2023 16:30:32",
+      "text": "123",
+      "user": "Ewokasi",
+      "chat_id": 637382945,
+      "id": 4,
+      "status": "answered"
+    },
+    {
+      "date": "27/09/2023 16:42:21",
+      "text": "12345",
+      "user": "Ewokasi",
+      "chat_id": 637382945,
+      "id": 5,
+      "status": "answered"
+    },
+    {
+      "date": "27/09/2023 16:43:58",
+      "text": "123",
+      "user": "Ewokasi",
+      "chat_id": 637382945,
+      "id": 6,
+      "status": "answered"
+    },
+    {
+      "date": "27/09/2023 17:18:18",
+      "text": "123",
+      "user": "Ewokasi",
+      "chat_id": 637382945,
+      "id": 7,
+      "status": "answered"
+    },
+    {
+      "date": "15/10/2023 15:02:06",
+      "text": "F",
+      "user": "Ewokasi",
+      "chat_id": 637382945,
+      "id": 8,
+      "status": "in process"
+    }
+  ]
+}
